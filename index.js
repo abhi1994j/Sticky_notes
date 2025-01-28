@@ -22,7 +22,8 @@ btn.addEventListener("click", () => {
         btnEd.innerText = "X"
         notebox.appendChild(btnEd)     
         // console.log(rightContainer);
-        para.innerText = textArea.value
+        para.innerText = textArea.value;
+        textArea.value = "";
         notebox.style.backgroundColor = color.value;
         notebox.style.padding = "10px"
         removeNotes();
