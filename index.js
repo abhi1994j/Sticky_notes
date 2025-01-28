@@ -31,8 +31,12 @@ btn.addEventListener("click", () => {
 });
 
 function removeNotes(){
-    const btnEd = document.querySelector(".cross");
-    btnEd.addEventListener('click' , ()=>{
-        btnEd.parentElement.remove();
+    const btnEd = document.querySelectorAll(".cross");
+    btnEd.forEach((ele ,idx)=>{
+        ele.addEventListener('click' , ()=>{
+            ele.parentElement.remove();
+            // console.log();
+        })
     })
+   
 }
