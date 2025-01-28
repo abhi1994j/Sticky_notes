@@ -9,7 +9,7 @@ let userNote = "";
 btn.addEventListener("click", () => {
     // console.log(textArea.value, color.value, btn);
     if(textArea.value== ''){
-        alert("Enter some text");
+        alert("Enter some text");      
     }
     else{
         notAdded.style.display = "none";
@@ -35,6 +35,8 @@ function removeNotes(){
     btnEd.forEach((ele ,idx)=>{
         ele.addEventListener('click' , ()=>{
             ele.parentElement.remove();
+            notAdded.style.display = "block";
+            notAdded.style.textAlign = "center"
             // console.log();
         })
     })
